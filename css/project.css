@@ -1,0 +1,635 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* footer font */
+@font-face{
+    font-family: 'Binggrae-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+*{margin:0; padding: 0;}
+body,html{height: 100%;}
+ul, ol, li{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+header{
+    width: 100%;
+    height: auto;
+    background: url(../images/backimg.jpg) no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+aside{
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+section{
+    float: left;
+    width: 85%;
+    height: 100%;
+    position: relative;
+}
+
+/* footer{
+    clear: left;
+    width: 100%;
+    height: 100px;
+    background-color: lightsteelblue;
+} */
+
+/* header */
+header h1{
+    font-size: 28pt;
+    mix-blend-mode: overlay;
+    color: inherit;
+    font-family: 'Recipekorea';
+    padding: 25px 0 0 30px;
+    box-sizing: border-box;
+    float: left;
+}
+
+header .sns{
+    float: right;
+    width: 250px;
+    height: 100px;
+    margin-top: 15px;
+    padding-top: 25px;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+header .sns img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+header .sns img:nth-child(3){
+    margin-right: 0;
+}
+
+/* aside */
+aside .gnb{
+    margin: 200px 0 150px 30px;
+}
+
+aside .gnb li{
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+
+aside .gnb li:nth-child(3) a{
+    color: #938ec4;
+}
+
+aside .gnb a{
+    font-family: 'Recipekorea';
+    font-size: 24pt;
+}
+
+aside .gnb li:hover a{
+    /* width: 100%;
+    border-bottom: 3px solid #938ec4; */
+    background-color: #938ec4;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+}
+
+aside .gnb li:nth-child(3):hover a{
+    color: #fff;
+}
+
+aside .m_gnb{
+    display: none;
+}
+
+aside .menu_btn{
+    display: none;
+}
+
+/* section */
+section h2{
+    font-family: 'Recipekorea';
+    font-size: 30pt;
+    padding-left: 120px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+section .content{
+    width: 1600px;
+    height: 310px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    align-content: space-between;
+}
+
+section img{
+    width: 598px;
+    height: 299px;
+    float: left;
+    margin: 0 30px 0 120px;
+    border: 1px solid #938ec4;
+}
+
+section .box{
+    width: 670px;
+    height: 100%;
+    float: left;
+    margin: 30px 0 0 0;
+    font-family: 'NanumSquareRound';
+}
+
+section .box h3{
+    display: inline-block;
+    font-size: 18pt;
+}
+
+section .box .date{
+    color: #aaa;
+    font-size: 14pt;
+}
+
+section .box .desc{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+section .box a{
+    color: #666;
+}
+
+section .box a:hover{
+    font-size: 13pt;
+    color: #938ec4;
+    font-weight: bold;
+}
+
+footer{
+    display: none;
+}
+
+/* small monitor / notebook */
+@media screen and (min-width:1025px) and (max-width:1399px){
+    /* header */
+    header h1{
+        font-size: 28pt;
+        padding: 25px 0 0 30px;
+    }
+
+    header .sns{
+        width: 220px;
+        height: 50px;
+        margin-top: 45px;
+        padding-top: 0;
+    }
+
+    header .sns img{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+
+   /* aside */
+    aside{
+    width: 20%;
+    }
+
+    aside .gnb{
+        margin: 200px 0 0 30px;
+    }
+
+    aside .gnb li{
+        line-height: 150%;
+        margin-bottom: 50px;
+    }
+
+    aside .gnb a{
+        font-size: 20pt;
+    }
+
+    aside .gnb li:hover a{
+        /* width: 100%;
+        border-bottom: 3px solid #938ec4; */
+        background-color: #938ec4;
+        border-radius: 30px;
+        padding: 10px;
+        color: #fff;
+    }
+
+    aside .m_gnb,
+    aside .menu_btn{
+        display: none;
+    }
+
+    /* section */
+    section{
+        width: 80%;
+    }
+
+    section h2{
+        font-size: 25pt;
+        padding-left: 120px;
+        padding-top: 50px;
+    }
+
+    section .content{
+        width: auto;
+        height: 600px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+    
+    section img{
+        width: 598px;
+        height: 299px;
+        clear: left;
+        margin: 0 30px 0 120px;
+    }
+    
+    section .box{
+        width: auto;
+        height: 300px;
+        margin: 30px 0 30px 120px;
+    }
+    
+    section .box h3{
+        display: inline-block;
+        margin-top: 15px;
+        font-size: 16pt;
+    }
+    
+    section .box .date{
+        font-size: 12pt;
+    }
+    
+    section .box .desc{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    /* footer */
+    footer{
+        display: none;
+    }
+}
+
+
+/* tablet */
+@media all and (min-width:768px) and (max-width:1024px){
+    /* header */
+    header h1{
+        font-size: 28pt;
+        padding: 0;
+        padding-left: 50%;
+        margin-left: -94px;
+        clear: left;
+    }
+
+    header .sns{
+        display: none;
+    }
+    
+    /* aside */
+    aside .gnb{
+        display: none;
+    }
+
+    aside .m_gnb{
+        display: none;
+    }
+
+    aside .menu_btn{
+        display: block;
+    }
+
+    aside{
+        width: 0%;
+    }
+
+    aside .m_gnb{
+        width: 100%;
+        height: auto;
+        clear: left;
+        position: absolute;
+        text-align: center;
+        background-color: #fff;
+        z-index: 1;
+    }
+    
+    aside .m_gnb li{
+        line-height: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    aside .m_gnb li:nth-child(3) a{
+        color: #938ec4;
+    }
+    
+    aside .m_gnb a{
+        font-family: 'Recipekorea';
+        font-size: 14pt;
+    }
+    
+    aside .m_gnb li:hover a{
+        background-color: #938ec4;
+        border-radius: 30px;
+        padding: 5px;
+        color: #fff;
+    }
+    
+    aside .m_gnb li:nth-child(3):hover a{
+        color: #fff;
+    }
+
+    aside .menu_btn{
+        position: absolute;
+        right: 3%;
+        top: 7%;
+    }
+
+    aside .menu_btn:hover span{
+        background-color: #fff;
+        color: inherit;
+        mix-blend-mode: overlay;
+    }
+
+    aside .menu_btn span{
+        font-family: 'NanumSquareRound';
+        color: #fff;
+        padding: 5px;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 1px solid #fff;
+        transition: all 1s;
+    }
+
+    /* section */
+    section{
+        width: 100%;
+        height: auto;
+    }
+
+    section h2{
+        font-size: 25pt;
+        padding-left: 80px;
+        padding-top: 50px;
+    }
+
+    section .content{
+        width: 90%;
+        height: 600px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+    
+    section img{
+        width: 598px;
+        height: 299px;
+        clear: left;
+        margin: 0 30px 0 80px;
+    }
+    
+    section .box{
+        width: auto;
+        height: 300px;
+        margin: 30px 0 30px 80px;
+    }
+    
+    section .box h3{
+        display: inline-block;
+        margin-top: 15px;
+        font-size: 15pt;
+    }
+    
+    section .box .date{
+        font-size: 12pt;
+    }
+    
+    section .box .desc{
+        font-size: 12pt;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    /* footer */
+    footer{
+        display: block;
+        clear: left;
+        width: 100%;
+        height: 50px;
+        background-color: #938ec4;
+    }
+
+    footer .sns{
+        padding-top: 10px;
+        box-sizing: border-box;
+        width: 190px;
+        height: 50px;
+        float: right;
+    }
+
+    footer .sns img{
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+    }
+
+    footer .sns img:nth-child(3){
+        margin-right: 0;
+    }
+}
+
+
+/* smart phone */
+@media all and (max-width:767px){
+    /* header */
+    header h1{
+        font-size: 28pt;
+        padding: 0;
+        padding-left: 50%;
+        margin-left: -94px;
+        clear: left;
+    }
+
+    header .sns{
+        display: none;
+    }
+    
+    /* aside */
+    aside .gnb{
+        display: none;
+    }
+
+    aside .m_gnb{
+        display: none;
+    }
+
+    aside .menu_btn{
+        display: block;
+    }
+
+    aside{
+        width: 0%;
+    }
+
+    aside .m_gnb{
+        width: 100%;
+        height: auto;
+        clear: left;
+        position: absolute;
+        text-align: center;
+        background-color: #fff;
+        z-index: 1;
+    }
+    
+    aside .m_gnb li{
+        line-height: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    aside .m_gnb li:nth-child(3) a{
+        color: #938ec4;
+    }
+    
+    aside .m_gnb a{
+        font-family: 'Recipekorea';
+        font-size: 14pt;
+    }
+    
+    aside .m_gnb li:hover a{
+        background-color: #938ec4;
+        border-radius: 30px;
+        padding: 5px;
+        color: #fff;
+    }
+    
+    aside .m_gnb li:nth-child(3):hover a{
+        color: #fff;
+    }
+
+    aside .menu_btn{
+        position: absolute;
+        right: 3%;
+        top: 7%;
+    }
+
+    aside .menu_btn:hover span{
+        background-color: #fff;
+        color: inherit;
+        mix-blend-mode: overlay;
+    }
+
+    aside .menu_btn span{
+        font-family: 'NanumSquareRound';
+        color: #fff;
+        padding: 5px;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 1px solid #fff;
+        transition: all 1s;
+    }
+
+    /* section */
+    section{
+        width: 100%;
+        height: auto;
+    }
+
+    section h2{
+        font-size: 20pt;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+
+    section .content{
+        width: 90%;
+        height: 550px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+    
+    section img{
+        width: 85%;
+        height: auto;
+        clear: left;
+        margin: 0 30px 0 50px;
+    }
+    
+    section .box{
+        width: auto;
+        height: 300px;
+        margin: 30px 0 30px 50px;
+    }
+    
+    section .box h3{
+        display: inline-block;
+        margin-top: 15px;
+        font-size: 12pt;
+    }
+    
+    section .box .date{
+        font-size: 10pt;
+    }
+    
+    section .box .desc{
+        font-size: 11pt;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    /* footer */
+    footer{
+        display: block;
+        clear: left;
+        width: 100%;
+        height: 50px;
+        background-color: #938ec4;
+    }
+
+    footer .sns{
+        padding-top: 10px;
+        box-sizing: border-box;
+        width: 190px;
+        height: 50px;
+        float: right;
+    }
+
+    footer .sns img{
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+    }
+
+    footer .sns img:nth-child(3){
+        margin-right: 0;
+    }
+}
