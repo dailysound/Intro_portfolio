@@ -179,4 +179,15 @@ $(document).ready(function(){
     $('section .img-slider4').slick('setPosition');
   });
 
+  // 자동으로 메뉴 사이드업
+  $(window).on('scroll', function(){
+    let num = $(this).scrollTop();
+    // 브라우저의 수직 스크롤바 위치 저장
+    console.log(num);
+
+    if(num >= 85){
+        $('.m_gnb').stop().slideUp(300);
+    }
+});
+
 });
